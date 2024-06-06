@@ -41,6 +41,7 @@ You can also load the project in editors such as Pycharm. The following environm
 ```
 
 ## Web operation tips
+If it cannot be displayed normally, please open the three files readme_1_img.png, readme_2_img.png, and readme_3_img.png in the main directory.
 ![img1](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_1_img.png)
 ![img2](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_2_img.png)
 ![img3](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_3_img.png)
