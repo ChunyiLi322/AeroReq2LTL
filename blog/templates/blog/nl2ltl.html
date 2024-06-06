@@ -1,0 +1,666 @@
+{% load static %}
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Home | NL2FL</title>
+    <script type="text/javascript" src="{% static 'blog/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/jquery-1.8.3.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/jquery-labelauty.js' %}"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="https://kit.fontawesome.com/72c42e442a.js" crossorigin="anonymous"></script>
+    <link href="{% static 'blog/bootstrap.min.css' %}" rel="stylesheet" />
+<!--    <link href="{% static 'blog/font-awesome.min.css' %}" rel="stylesheet" />-->
+    <link href="{% static 'blog/animate.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'blog/lightbox.css' %}" rel="stylesheet" />
+    <link href="{% static 'blog/mian_2.css' %}" rel="stylesheet" />
+    <link href="{% static 'blog/responsive.css' %}" rel="stylesheet" />
+    <link href="{% static 'blog/jquery-labelauty.css' %}" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="{% static 'blog/js/html5shiv.js' %}"></script>
+      <script src="{% static 'blog/js/respond_min.js' %}"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="{% static 'blog/images/ico/icon-16.png' %}" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="{% static 'blog/images/ico/icon-144.ico' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="{% static 'blog/images/ico/icon-114.ico' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="{% static 'blog/images/ico/icon-72.ico' %}"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="{% static 'blog/images/ico/icon-57.ico' %}"
+    />
+  </head>
+  <body>
+
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 overflow">
+            <div class="social-icons pull-right">
+              <ul class="nav nav-pills">
+                <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown active">
+                <a href="index.html">Homepage</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">Formal language <i class="fa fa-angle-down"></i></a>
+                <ul role="menu" class="sub-menu">
+                    <li>Linear Temporal Logic (LTL)</a></li>
+                    <li>Compute Tree Logic CTL</a></li>
+                    <li>Proposition Projection Temporal Logic PPTL</a></li>
+                    <li>Action timing logic TLA+</a></li>
+                  <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304397523000154">联合时序逻辑UTL</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="blog.html">Project Team Introduction<i class="fa fa-angle-down"></i></a>
+                <ul role="menu" class="sub-menu">
+                  <li><a href="blog.html"> </a></li>
+                  <li><a href="blogtwo.html"> </a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="portfolio.html"
+                  >Formal Method Knowledge Graph <i class="fa fa-angle-down"></i
+                ></a>
+                <ul role="menu" class="sub-menu">
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li><a href="shortcodes.html ">Historical conversion records</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <form role="form">
+              <i class="fa fa-search"></i>
+              <div class="field-toggle">
+                <input
+                  type="text"
+                  class="search-form"
+                  autocomplete="off"
+                  placeholder="Search"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="home-slider">
+      <div class="container">
+        <div class="col-sm-11" style="padding-left: 0">
+          <div class="main-slider">
+            <img
+              src="{% static 'blog/images/home/slider/birds1.png' %}"
+              class="slider-birds1"
+              alt="slider image"
+            />
+
+             <img
+              src="{% static 'blog/images/home/slider/station.png' %}"
+              class="slider-hill"
+              alt="slider image"
+            />
+
+            <img
+              src="{% static 'blog/images/home/slider/sun.png' %}"
+              class="slider-birds2"
+              alt="slider image"
+            />
+          </div>
+        </div>
+      </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+
+   <style>
+    ul { list-style-type: none;}
+    li { display: inline-block;}
+    li { margin: 10px 0;}
+    input.labelauty + label { font: 12px "Microsoft Yahei";}
+   </style>
+
+    <section id="clients1"></section>
+
+    <!--  这里是文件加载句子预留框，按钮和相关性评估的加载条也在-->
+    <section id="clients">
+      <div class="container">
+        <div class="row"  style="padding-left: 15px">
+          <div class="col-sm-11">
+            </div>
+              <h2>   </h2>
+               <div id="textcontainer"></div>
+                <div class="col-sm-offset-4">
+                 <div class="form-group" id="textcontainerbutton"></div>
+                </div>
+            <div class="col-sm-offset-4" id="simloading">
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!--  这里是模板方法的地方-->
+    <section id="templates">
+      <div class="container">
+
+          <!--  这里是新需求录入的方法-->
+
+          <div class="row">
+              <div class="col-sm-4">
+                  <h2>For new requirements</h2>
+              </div>
+              <div class="col-sm-4">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+              <div class="col-sm-4">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-sm-6" style="padding-top: 5px;">
+                  <div class="form-group">
+                              <textarea
+                                      type="text"
+                                      name="NewRequirement"
+                                      id="NewRequirement"
+                                      class="form-control"
+                                      rows="1"
+                                      placeholder="New Requirement"
+                              ></textarea>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <p>
+                      <button class="btn btn-common" id="nrqtemplate" name="queryrq" type="button" onclick="nreqsearchtemp()">Similar template query</button>
+                  </p>
+              </div>
+              <div class="col-sm-2">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+           </div>
+
+
+          <div class="row">
+              <div class="col-sm-4">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+              <div class="col-sm-4">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+              <div class="col-sm-4">
+                  <h2 style="opacity: 0;"> 填充字符 </h2>
+              </div>
+          </div>
+
+
+
+
+              <div class="row">
+                  <div class="col-sm-4">
+                      <h2>For existing requirements</h2>
+                  </div>
+                  <div class="col-sm-4">
+                      <h2 style="opacity: 0;"> 填充字符 </h2>
+                  </div>
+                  <div class="col-sm-4">
+                      <h2 style="opacity: 0;"> 填充字符 </h2>
+                  </div>
+              </div>
+
+
+<!--          IP查询             -->
+        <div class="row">
+          <div class="col-sm-3">
+              <h2>Requirements Template</h2>
+          </div>
+          <div class="col-sm-3">
+               <h2>Requirement ID</h2>
+          </div>
+          <div class="col-sm-4">
+               <h2 style="opacity: 0;"> 填充字符 </h2>
+          </div>
+
+
+        <!--  加载可选列表，view中和主题选取的加载放在一起，在solveform的hello方法中,selectOnchang改变第二个复选框值 -->
+          <form action="" method="post" id >
+              {% csrf_token %}
+                  <div class="form-group">
+                      <div class="col-sm-3">
+                      <select class="form-control"  id="IPID" onchange="selectOnchang_IPID(this)">
+                          {% if IPID_item %}
+                              {% for IPID_item_value in IPID_item %}
+                              <option value="{{ IPID_item_value }}">{{ IPID_item_value }}</option>
+                              {% endfor %}
+                          {% else %}
+                          <option value="">No data available</option>
+                          {% endif %}
+                      </select>
+                      </div>
+                  </div>
+                  <div class="col-sm-3" >
+                      <select class="form-control"  id="REID" onchange="selectOnchang(this)">
+                          {% if REID_item %}
+                          {% for REID_item_value in REID_item %}
+                          <option value="{{ REID_item_value }}">{{ REID_item_value }}</option>
+                          {% endfor %}
+                          {% else %}
+                          <option value="">No data available</option>
+                          {% endif %}
+                      </select>
+                  </div>
+          <div class="col-sm-5">
+              <p>
+                  <button class="btn btn-common" id="queryrq" name="queryrq" type="button" onclick="searchtemp()">Template Query</button>
+              </p>
+          </div>
+            </form>
+        </div>
+
+<!--          IP已有需求             -->
+        <div class="col-sm-11" style="padding-left: 0;">
+              <div class="col-sm-2" id="ExsitIDlab" style="padding-left: 0; padding-top: 5px; padding-right: 0; font-weight: 200;  color: inherit; font-family: inherit; color: #777;">
+<!--                  &lt;!&ndash;      需要插入       &ndash;&gt;-->
+<!--                  <p  style="font-size: 21px"> IP库中已有需求: </p>-->
+              </div>
+              <div class="col-sm-10" id="ExsitID" style="padding-left: 0; padding-top: 5px; padding-right: 0; font-weight: 200;  color: inherit; font-family: inherit; color: #777;">
+<!--                 &lt;!&ndash;       需要插入          &ndash;&gt;-->
+<!--                  <p  style="font-size: 15px"> IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求IP库中已有需求 </p>-->
+              </div>
+          </div>
+
+
+<!--          隔断             -->
+        <div class="row">
+          <div class="col-sm-4">
+              <h2>Requirement template</h2>
+          </div>
+          <div class="col-sm-4">
+              <h2 style="opacity: 0;"> 填充字符 </h2>
+          </div>
+          <div class="col-sm-4">
+              <h2 style="opacity: 0;"> 填充字符 </h2>
+          </div>
+        </div>
+
+
+<!--      需求模板里面内容            -->
+        <div class="row">
+
+<!--      需求模板       -->
+            <div class="col-sm-10">
+                <div class="form-group">
+                              <textarea
+                                      name="constraintnl"
+                                      id="constraintnl"
+                                      required="required"
+                                      class="form-control"
+                                      rows="9"
+                                      onclick="checkSelection()"
+                                      placeholder="Requirement template, text selection covers {professional terms, work mode, condition, Domain rounds, work mode, condition} and other words, all of which will have relevant word prompts."
+                              ></textarea>
+                </div>
+                <div class="col-sm-4">
+            </div>
+           </div>
+
+
+            <!--      提示词下拉框 工作模式            -->
+            <select class="rqdropdown" id="WKmodePmt"  size="4">
+                {% if WKmode_item %}
+                {% for WKmode_item_value in WKmode_item %}
+                <option value="{{ WKmode_item_value }}" onclick="replaceText('{{ WKmode_item_value }}')">{{ WKmode_item_value }}</option>
+                {% endfor %}
+                {% else %}
+                <option value="">No data available</option>
+                {% endif %}
+            </select>
+
+
+            <!--      提示词下拉框 专业领域词库            -->
+            <select class="rqdropdown" id="RQCmodePmt"  size="4">
+                {% if RQCmode_item %}
+                {% for RQCmode_item_value in RQCmode_item %}
+                <option value="{{ RQCmode_item_value }}" onclick="replaceText('{{ RQCmode_item_value }}')">{{ RQCmode_item_value }}</option>
+                {% endfor %}
+                {% else %}
+                <option value="">No data available</option>
+                {% endif %}
+            </select>
+
+            <!--      提示词下拉框 专业领域词库            -->
+            <select class="rqdropdown" id="RQCconditionPmt"  size="4">
+                {% if RQCcondition_item %}
+                {% for RQCcondition_item_value in RQCcondition_item %}
+                <option value="{{ RQCcondition_item_value }}" onclick="replaceText('{{ RQCcondition_item_value }}')">{{ RQCcondition_item_value }}</option>
+                {% endfor %}
+                {% else %}
+                <option value="">No data available</option>
+                {% endif %}
+            </select>
+
+
+
+
+
+<!--      需求生成按钮       -->
+            <div class="col-sm-1" >
+
+                <input
+                        type="button"
+                        id="cnlsubmit"
+                        class="btn btn-common"
+                        value="Req_gen"
+
+                        style = "height: 195px;text-align: center;line-height: normal;padding-top: 6px; text-orientation: upright;writing-mode: vertical-rl; font-size: 15px;background-color: transparent; padding-left: 21px; padding-right: 21px;"
+                />
+            </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+<!--  LTL生成部分和项目负责人介绍-->
+    <footer id="footer">
+<!--主题选取+编辑转化语言-->
+          <div class="container">
+
+                <div class="row">
+                <div class="col-sm-11 text-center bottom-separator">
+                  <img
+                    src="{% static 'blog/images/home/under_5.png' %}"
+                    class="img-responsive inline"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+                <div class="col-11 col-xs-2 ">
+              <div
+                  class="wow scaleIn"
+                  data-wow-duration="50ms"
+                  data-wow-delay="300ms"
+                >
+             <img src="{% static 'blog/images/home/icon13.png' %}" alt="" />
+                  <h2><a>    Language </a></h2>
+            </div>
+
+            </div>
+                <div class="col-11 col-xs-10 " style="height:220px">
+                <li><input type="checkbox"  style="background-color: #cc9b59" name="flcheckbox" disabled checked data-labelauty="Formal laguage"></li>
+                {% for i in views_list%}
+                 <li><input type="checkbox" style="background-color: #cc9b59"  name="flcheckbox" data-labelauty={{i}}></li>
+                {% endfor %}
+                {% csrf_token %}
+            </div>
+
+                <div class="col-12 col-xs-2">
+                <div
+                  class="wow scaleIn"
+                  data-wow-duration="50ms"
+                  data-wow-delay="300ms"
+                >
+             <img src="{% static 'blog/images/home/icon12.png' %}" alt="" />
+                  <h2><a class="hover1">    Keyword</a></h2>
+
+                </div>
+            </div>
+                <div class="col-11 col-xs-10" style="height:220px">
+                <li><input type="checkbox" class="labelautybg" name="flpracheckbox" disabled checked data-labelauty="Formal method"></li>
+                {% for i in views_list_1%}
+                 <li><input type="checkbox" class="labelautybg" name="flpracheckbox" data-labelauty={{i}}></li>
+                {% endfor %}
+                {% csrf_token %}
+            </div>
+
+                <script>
+                $(function(){
+                    $(':input').labelauty();
+                });
+                </script>
+
+              <!--         隔断       -->
+                <div class="col-sm-11">
+                  <div class="col-sm-5" style="padding-left: 0">
+                      <div  style="color: inherit; font-family: inherit;	color: #777;font-weight: 300;	margin-top: 5px; font-size: 26px;">
+                          Requirement transformation
+                      </div>
+                  </div>
+                  <div class="col-sm-2">
+                      <h2 style="opacity: 0;"> 填充字符 </h2>
+                  </div>
+                  <div class="col-sm-5">
+                      <h2 style="opacity: 0;"> 填充字符 </h2>
+                  </div>
+              </div>
+
+
+              <!--         转化       -->
+                <div class="col-sm-11">
+                   <form
+                     id="main-nl2fl-form"
+                     name="nl2fl-form"
+                     method='post'
+                     action=''
+                   >
+                       {% csrf_token %}
+                       <div class="col-sm-2" style="padding-left: 0">
+                            <div class="form-group" style="padding-left: 0">
+                            <select class="form-control"  id="ChatGptversion" onchange="selectOnchang(this)">
+                                <option value="gpt-3.5-turbo">ChatGpt 3.5</option>
+                                <option value="gpt-2.0-turbo">ChatGpt 2.0</option>
+                                <option value="gpt-3.0-turbo">ChatGpt 3.0</option>
+                                <option value="gpt-4.0-turbo">ChatGpt 4.0</option>
+                            </select>
+                            </div>
+                       </div>
+
+                       <div class="col-sm-4">
+                            <div class="form-group">
+                              <textarea
+                                type="text"
+                                name="ChatGptAPIname"
+                                id="ChatGptAPIname"
+                                class="form-control"
+                                rows="1"
+                                placeholder="ChatGpt API"
+                              ></textarea>
+                            </div>
+                       </div>
+
+
+                       <div class="col-sm-1">
+                               <input
+                                       type="button"
+                                       id="nl2flsubmit"
+                                       class="btn btn-common"
+                                       value="Conversion"
+                                       style="height: 35px;text-align: center;line-height: normal;padding-top: 6px;"
+                               />
+                       </div>
+
+                       <div class="form-group">
+                              <textarea
+                                name="nlmessage"
+                                id="nlmessage"
+                                required="required"
+                                class="form-control"
+                                rows="9"
+                                placeholder="Input the requirements described in natural language..."
+                              ></textarea>
+                            </div>
+
+
+                       <div class="col-sm-5">
+                           <h2 style="opacity: 0;"> 填充字符 </h2>
+                       </div>
+
+                       </form>
+                   </div>
+
+              <!--        隔断       -->
+                <div class="col-sm-11">
+                    <div class="col-sm-2" style="padding-left: 0">
+                        <div class="form-group" style="color: inherit; font-family: inherit;	color: #777;font-weight: 300;	margin-top: 5px; font-size: 26px;">
+                            Result display
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2 style="opacity: 0;"> 填充字符 </h2>
+                    </div>
+                    <div class="col-sm-5">
+                        <h2 style="opacity: 0;"> 填充字符 </h2>
+                    </div>
+
+                </div>
+
+              <!--        结果和公式生成       -->
+                <div class="col-sm-11">
+                                <!--加载loading -->
+<!--                              <div class="form-group" >-->
+<!--                               <img  id="loading" class="loadingcss" style="display: none; " src="{% static 'blog/images/ico/buenas-noches.gif' %}" width="5%" alt="" /></div>-->
+<!--                              &lt;!&ndash;&ndash;&gt;-->
+                            <div class="form-group">
+                              <textarea
+                                name="flmessage"
+                                id="flmessage"
+                                required="required"
+                                class="form-control"
+                                rows="2"
+                                placeholder="Formal formulas"
+                              ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                              <textarea
+                                name="flpramessage"
+                                id="flpramessage"
+                                required="required"
+                                class="form-control"
+                                rows="6"
+                                placeholder="Interpretation of Formal Formulas"
+                              ></textarea>
+
+
+<!--                              <div class="form-group">-->
+<!--                              <img-->
+<!--                                src="{% static 'blog/images/home/under_7.png' %}"-->
+<!--                                class="img-responsive inline"-->
+<!--                                alt=""-->
+<!--                              />-->
+<!--                              </div>-->
+
+                            </div>
+                            </div>
+
+
+
+              <!--公式可视化+插画-->
+              <div class="col-sm-11 text-center bottom-separator">
+                              <img
+                                src=""
+                                class="img-responsive inline"
+                                id = "pathdir"
+                                alt=""
+                              />
+              </div>
+              <div class="col-sm-11 text-center bottom-separator">
+                  <img
+                          src="{% static 'blog/images/home/under_6.png' %}"
+                          class="img-responsive inline"
+                          alt=""
+                  />
+              </div>
+
+         </div>
+
+
+            <!--     width: 10%; height: 10%;    -->
+          <img  id="loading" class="loadingcss" style="display: none;   object-fit: contain; position: fixed; top: 50%; left: 50%;transform: translate(-50%, -50%);     " src="{% static 'blog/images/ico/buenas-noches.gif' %}"  alt="" />
+
+          <div class="col-sm-12">
+
+          <div class="copyright-text text-center">
+              <p>&copy; The NL2FL project.</p>
+              <p>
+                Designed by
+                <a target="_blank" href="#">XXX and XXXX </a>
+              </p>
+            </div>
+
+          </div>
+    </footer>
+
+
+    <script data-cfasync="false" src="{% static 'blog/js/email-decode.min.js'  %}" ></script>
+
+    <script type="text/javascript" src="{% static 'blog/js/lightbox.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'blog/js/wow.min.js' %}"></script>
+
+
+  </body>
+</html>

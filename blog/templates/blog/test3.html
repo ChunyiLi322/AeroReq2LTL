@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <div id="editable" contenteditable="true" style="border: 1px solid #ccc; padding: 10px; min-height: 100px;">
+        输入文本，并在其中包括单词 "苹果"。
+    </div>
+
+
+</head>
+<body>
+
+
+
+
+
+<script>
+    document.getElementById('editable').addEventListener('input', function() {
+        var text = this.innerHTML;
+        // 替换 '苹果' 单词并添加蓝色边框
+        text = text.replace(/苹果/g, '<span class="highlight">苹果</span>');
+        // 更新内容，同时保持光标位置
+        var selection = window.getSelection();
+        var range = selection.getRangeAt(0);
+        var temp = document.createElement('div');
+        temp.innerHTML = text;
+        while (temp.firstChild) {
+            this.appendChild(temp.firstChild);
+        }
+        selection.removeAllRanges();
+        selection.addRange(range);
+    });
+</script>
+
+
+
+
+</body>
+</html>
+
+
