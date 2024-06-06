@@ -29,12 +29,15 @@ $ python manage.py runserver 8000
 Go to the web browser and visit `http://localhost:8000/hello`
 
 ## Others
-You can also load the project in editors such as Pycharm.
+You can also load the project in editors such as Pycharm. The following environment needs to be configured：
+
 ``
-A
+1. File -> setting -> project -> Python Interpreter -> add local Interpreter 
+2. Edit Configurations -> django sever
+3. download https://github.com/xerial/sqlite-jdbc/releases/download/3.43.0.0/sqlite-jdbc-3.43.0.0.jar
 ``
 
 
 ## Web controls
-![Image text](https://github.com/ChunyiLi322/Space2LTL/readme_1_img.png)
+![Image](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_1_img.png)
 
