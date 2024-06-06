@@ -1,8 +1,8 @@
-# NL2FL web
+# Space2LTL web
 
 ## About
 
-This is a demo project for natural language to logical language. The project is in /nl2flweb.
+This is the web project for natural language to logical language. 
 
 It was made using  **Anaconda3**  + **Python** + **Django** and database is **SQLite**.
 **Bootstrap** was used for styling.
