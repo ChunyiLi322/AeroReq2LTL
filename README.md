@@ -41,4 +41,6 @@ You can also load the project in editors such as Pycharm. The following environm
 ```
 
 ## Web operation tips
-[!img](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_1_img.png)
+![img](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_1_img.png)
+![img](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_2_img.png)
+![img](https://github.com/ChunyiLi322/Space2LTL/blob/master/readme_2_img.png)
