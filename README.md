@@ -14,8 +14,6 @@ $ pip install -r requirements.txt
 
 ## How to run
 
-### Default
-
 You can run the application from the command line with manage.py.
 Go to the root folder of the application.
 
@@ -30,12 +28,13 @@ $ python manage.py runserver 8000
 
 Go to the web browser and visit `http://localhost:8000/hello`
 
-### Others
-Unzip the **node_modules.zip** file to the current file. This file is a third-party library, which has many files that are difficult to upload.
-```
-/nl2flweb/mysite/blog/static/blog/js/node_modules.zip  
-```
+## Others
+You can also load the project in editors such as Pycharm.
+``
+A
+``
+
 
 ## Web controls
-
+![Image text](https://github.com/ChunyiLi322/Space2LTL/readme_1_img.png)
 
