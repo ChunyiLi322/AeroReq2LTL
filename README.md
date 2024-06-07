@@ -1,4 +1,4 @@
-# Space2LTL web
+# AeroReq2LTL web
 
 ## About
 
